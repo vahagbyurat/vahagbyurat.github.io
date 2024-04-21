@@ -4,46 +4,71 @@
     <title>Byurat Cultural Foundation</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Source Code Pro';
             line-height: 1.6;
-            background-color: darkgray;
-            color: white;
+            background-color: rgb(18, 18, 18);
+            color: rgb(233, 229, 224);
         }
+
 
         h1 {
             color: lightgray;
             font-size: 24px;
+            margin-top: 10px;
+            /* Reduced top margin */
+            margin-bottom: 10px;
+            /* Reduced bottom margin */
+            padding: 5px 0;
+            /* Minimal padding for better control */
         }
+
 
         h2 {
             color: navy;
         }
 
+        h3::before {
+            content: "";
+            display: block;
+            height: 100px;
+            /* Match this with the height of your fixed header */
+            margin-top: -100px;
+            /* Negative margin equal to the height to pull the actual content up */
+            visibility: hidden;
+        }
+
+
         .topnav {
+            font-family: 'Source Code Pro';
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: #333;
+            background-color: #141414;
             overflow: hidden;
+            height: 100px;
+            /* Ensure this matches the actual height needed */
         }
+
+        .main-content {
+            padding-top: 100px;
+            /* This should match or exceed the height of .topnav */
+        }
+
 
         .topnav a {
             float: left;
             color: #f2f2f2;
             text-align: center;
-            padding: 14px 16px;
+            padding: 1px 16px;
             text-decoration: none;
             font-size: 17px;
+
+            background-color: #1c1c1c;
         }
 
         .topnav a:hover {
-            background-color: #ddd;
+            background-color: #757575;
             color: black;
-        }
-
-        .topnav a.active {
-            background-color: #4CAF50;
-            color: white;
         }
 
         p {
@@ -54,457 +79,689 @@
             margin-top: 1em;
             max-width: 100%;
         }
+
+        a {
+            color: lightgray;
+            text-decoration: underline;
+        }
+
+        .image-container {
+            text-align: center;
+            /* Centers the content within the container */
+            float: right;
+            /* Aligns the container to the right */
+            margin-left: 20px;
+            /* Space between this container and other content */
+            margin-bottom: 20px;
+            /* Space below this container */
+        }
+
+        .image-container img {
+            max-height: 300px;
+            /* Fixed height for the images */
+            width: auto;
+            /* Maintains aspect ratio */
+            display: inline-block;
+            /* Displays images inline with each other */
+            margin-right: 10px;
+            /* Space between the two images */
+        }
+
+        .image-container p {
+            font-style: italic;
+            /* Keeps the text italicized */
+            margin: 5px 0 0;
+            /* Maintains the adjusted margin for spacing */
+            font-size: 12px;
+            /* Decreases the font size by 2 points from a typical default of 16px */
+        }
     </style>
 </head>
 </head>
 
 <body>
-    <nav id="topnav">
-        <h1>Byurat Cultural Website for Vahag</h1>
+    <nav id="topnav" class="topnav">
+        <h1>Byurat Cultural Foundation</h1>
         <a href="#Smbat">Smbat</a>
+        <a href="#Vaghinak">Vaghinak</a>
+        <a href="#Hayk-Levon">Haik-Levon</a>
+        <a href="#BCF">The Foundation</a>
+        <a href="#school">The School</a>
+        <a href="#books">Books</a>
+        <a href="#links">Links</a>
+        <a href="#Smbat2">Smbat Jr.</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <h3 id="smbat">Smbat Byurat </h3>
-    <p>Smbat Byurat’s biography is written by his son Hayk-Levon Byurat</p>
-    <p>Smbat Byurat was born on March 3rd, 1862 in Zeytun, at Shovoryan (or Baz Bayir) quarter. He received his
-        elementary education in Zeytun. 9 years old, he left Zeytun and attended and graduated from Jharankavorats
-        School (Armenian Theological Seminary) in Jerusalem, then continued his education in Sorbonne, France. </p>
-    <p>In 1880 he returned to Cilicia, started helping the education system, first as a helper of the principal, later
-        as a principal of Cilicia&#x27;s Marash Central School district. 1880 Byurat organized “Kilikio pahapan” (The
-        protector of Cilicia) organization, where he was able to connect with all religious centers of Cilicia and get
-        the first census done in Cilicia. He was teaching in Zeytun from 1882 to 1884. In 1885 he opened a private
-        school and taught in Sis for only 6 months, but could not continue due to climate and that summer he went to
-        Constantinople and met times’ biggest and greatest writers there. In “Erkragund &#x27;&#x27; (The Globe), he
-        published his first writing “Meryalner” (The Dead) in the August 1885 issue.</p>
-    <p>In 1885 he published his first book, which was about the geography and history of the Zeytun region. In 1885 he
-        also met and married to Xas-gyux Orphanage school teacher, Yevdoxia Shishmanyan. </p>
-    <p>In 1886 he returned to Zeytun with his wife as a Union School inspector. On August 10, 1886, Yevdoxia gave birth
-        to his first son Vaghinak. Smbat spent much time travelling to establish schools all around the region. In 1887
-        from the Zeytun great fire where 950 houses burned, Smbat lost his family house and with his wife left for
-        Constantinople. Less than 6 months later, he gets an assignment at Samson and spends 3 years there. In 1890 with
-        his pregnant wife and child, he was on his way to Zeytun, when he was arrested at Yerpuz village and they were
-        taken to Marash prison, where Smbat&#x27;s second son: Hayk-Levon was born September 1890.</p>
-    <p>Smbat and 48 other political prisoners were kept in prison until the end of 1895 in Aleppo. After he was freed,
-        he relocated to Constantinople (Istanbul).</p>
-    <br>
-    <p>In 1896, he realized that Sultan’s police were after him again, forcing him and his family to flee to Egypt. He
-        published his first newspaper “Nor Or &#x27;&#x27; (New Day) and Puniq (Phoenix) in Egypt. Smbat opened private
-        schools for four years in Cairo and Alexandria. Tired of the political party’s constant arguments, he completely
-        stopped being a political figure in 1900. Same year he signed agreements with &quot;Hratarakchakan&quot;
-        (Publication) of Tbilisi to send them his unpublished works for mass publication, but soon he learned that
-        &quot;Hratarakchakan&quot; was bankrupt. With help, he again started publication of Puniq (Phoenix) at Cairo for
-        another four years.</p>
-    <p>From 1904 he was inspector-director for the school district, at the same time he was Alexandria cities Mixed
-        Court systems Officer. During these years he was traveling to Venice Italy and other cities with his sons. His
-        sons were applying to go school in St. Lazare, Venice, Italy. In 1907 he went to Romania for 10 months, but
-        having fallen victim to political games, he had to leave the country quickly. He moved to Bulgaria to teach,
-        where he was caught by spies and arrested again by the Sultan’s police. On the way to Constantinople, news
-        arrives that the Young Turks overthrow the Sultan, and Smbat was able to escape. Smbat with his family returns
-        to Constantinople (Istanbul). In 1908 he was elected as a National Representative for 10 years to represent
-        Zeytun-Marash region. End of that year, with his older son -Vaghinak he opened a Publishing House. </p>
-    <br>
-    <p>In 1910 with his younger son Hayk-Levon he came back home to Zeytun to visit his parents’ graves. For three and
-        half months they visited almost all of Cilicia&#x27;s major locations. On their way back, they visited Athens,
-        Greece.</p>
-    <p>From 1908 to 1914 he wrote and published over 40 books while fighting political wars to free Armenia. Then came
-        World War I, where the Turks decided to address “The Armenian Question,” by exiling and killing over two million
-        Armenians from Turkish-Armenia. Smbat Byurat, along with most of the Armenian political and cultural leaders,
-        was arrested and exiled in April of 1915 to Ayaş, Ottoman Turkey. All were massacred; according to rumors, he
-        was stoned to death. His last words sent to his sons were: “I am a dead man now. Forget about my body. Save my
-        writings...”.</p>
-    <p> Smbat Byurat wife Yevdoxia Byurat
-    </p>
-    <h3 id="Vaghinak">Vaghinak Byurat</h3>
-    <p>Vaghinak Byurat was born on August 10, 1886 in Zeytun, at Shovoryan (or Baz Bayir) quarter. He received his
-        elementary education from both parents. He went to get higher education in Venice Italy at St. Lazare, travels
-        lot and has learn publishing business in Europe. First he works for other publishers, than when family returns
-        to Constantinople (Istanbul) in 1908, with his dad opens “Jamanakakic Matenashar” (Modern Litography) publishing
-        house.</p>
-    <p>He married first time 1911 in Istanbul Turkey. His first wife’s name was Araxi and their god father was Grigor
-        Zohrap.</p>
-    <p>He had 2 daughters from that marriage-Anais and Sirarpie, both stayed in Istanbul as much as we know under their
-        uncle’s care till they got married. </p>
-    <p>1912 Vaghinak was on “Titanic” and survived when he was taking 6000 books to America.</p>
-    <p>In 1925 Vaghinak left Turkey and lived in Lebanon and in and out in Syria. A little before then Hayk-Levon with
-        his mother had moved to Cairo, Egypt.</p>
-    <p>Vaghinak remarried in 1933, and his only son was born in 1934, named Smbat in his grandfather’s memory.</p>
-    <br>
-    <p>Vaghinak and Smbat Jr. 1937 Lebanon</p>
-    <p>Vaghinak Byurat in 1946 with his family repatriated to Soviet Armenia. They took with them over 6,000 books to
-        Armenia. Most of the books were confiscated from them as forbidden anti-governmental and nationalistic
-        literature. </p>
-    <p>The only literary work Vaghinak was able to do in Soviet Armenia was in commemoration of the 50th anniversary of
-        Armenian Genocide, he published Smbat Byurat’s short biography in a magazine.</p>
-    <p>Vaghinak Byurat lived a long life to his old years. During Christmas of 1965 Vaghinak fell on the street and
-        broke his hip. For 80 years old Vaghinak it was very hard to become bed bound. </p>
-    <br>
-    <p>With grandson Haik, 1963 Yerevan, Armenia</p>
-    <p>Now he uses his time educating and teaching his 5 years old grandson. He taught Haik to play card games and
-        backgammon. But education took first priority, teaching him mathematics and Armenian language. Later years he
-        taught him Armenian Literature, making a multi-page list of the books for Haik to read. He taught Haik to Love
-        the Armenian Language unconditionally. Haik was taking care of his grandpa, loved and appreciated him a lot.
-        Haik especially loved to hear his grandpa’s life stories, Armenian and foreign tales. One of the ways Vaghinak
-        described someone’s death is that he did “poof” and passed. That is exactly how he passed January 6, 1972,
-        without suffering and like a candle burning all the way to the end.</p>
-    <p>His major dream was to see his father’s works published in Armenia, but he did not succeed. He died with hope in
-        his heart. It is fair to state that his own people forgot Smbat Byurat’s literary contributions and heroic fall.
-        Artists would sing one of Smbat Byurat’s famous songs “Adana Lamentation” (Adanayi Oxb@), yet it was recognized
-        as a folk song by an unknown writer. His heirs did not fight the Soviet bureaucracy, and in 1980 they immigrated
-        to the United States with empty packets…</p>
-    <br>
-    <p>Vaghinak (1886-1972) and Bersabe (1895-1975) Byurats gravesite in Armenia</p>
-    <br><br>
-    <p>Hayk-Levon Byurat</p>
-    <p>Younger son of Smbat Byurat was born in Marash prison, September 1890: Here is how Smbat Byurat describing his
-        birth in the Marash prison:</p>
-    <p>Young Woman was screaming from the pain with one voice, screaming for a couple of seconds, paused to cry, and
-        then she was screaming again, more pitiful and more powerful.</p>
-    <p>-Let’s clean the room, please leave the room, all of you, -asked doctor Polatyan.</p>
-    <p>Fatma Tutu escorted all of them out-both Armenians and both Turks. She returned to the cell, proud of her job’s
-        power and duty. </p>
-    <p>The child, forgotten by everyone (Smbat’s first son), was sleeping in the corner of the cell, while her mother
-        was still suffering.</p>
-    <p>A scream came out of the giving birth mother, which was signaling the critical second. Mother’s scream was
-        followed by the baby&#x27;s scream.</p>
-    <p>That scream was from a newborn Armenian boy, who was announcing his victorious entrance to the tyranny of the
-        world. That was the cry of the future soldier, who was opening his eyes inside the Crime and Pain room. They
-        wrapped the baby in the leftover clothes of the prisoners, and the dirt was his bed. Fatma Tutu was in joy and
-        holiday, because she had a new prisoner under her care-a newborn baby prisoner. The mother sadly looked at her
-        newborn. She took her newborn and with maternal instinct gave him a breast to suck milk from. And he carelessly
-        sucked the milk, the milk that comes from the Suffering and Pain fountain. Looked the mother to her newborn
-        proud and happy, and she hugged him, giving him her first motherly kisses on his chicks. She was whispering an
-        old sweet lullaby. More she looked, the happier she became. She was so happy that she brought life to the place
-        where lives get lost every day. </p>
-    <p>These feelings were comforting her, making her forget reality, the four cold and dark walls reality. She was
-        thinking that the newborn baby would be the reason for her to get her freedom, since it was unimaginable to live
-        in these conditions. She had big hopes for her soon to come freedom. With that hope in her mind, she slept the
-        baby on her chest and the other child on her side.</p>
-    <p>Forty days later:</p>
-    <p>In Marash’s St. Stepannos church, which was sitting right under the Marash’s Castle, there was a christening in
-        process, with a large crowd present. They were baptizing the prison born baby boy. At the baby’s christening
-        present were father, his uncle Avetiq and Der-Ghazar high priest grandfather, who despite his eighty plus years,
-        rushed to Marash after getting his son’s letter. Although the baby&#x27;s mother asked to name the baby Tsavak
-        (Painful) because he was born in jail, his father wanted to name him Hayk-Levon: Hayk for the Armenian Nation’s
-        first ancestor and freedom fighter, and Levon for the last Armenian King, imprisoned in chains… The newborn was
-        named Hayk-Levon.</p>
-    <p> Family suffered hard 5 years of Smbat Byurat prisoning first in Marash, later at Aleppo. After relise of prison
-        family goes to Constantinople and Smbat becomes teacher in Armenian school, but knowing that sultan’s spies are
-        after him, he finds a way to escape from there to Egypt 1896.</p>
-    <p>Hayk got most of his knowledge at home, first from his parents, later from his brother. With family he lives in
-        Alexandria from 1896-1908, then moves to Constantinople with his family. He worked with his brother and learn
-        book publishing business. Hayk-Levon lives with his mother Yevdoxia after Armenian genocide. He got married but
-        we do not have name of the wife. It was very unhappy marriage per Vaghinak. 1925 he moves with mother and wife
-        to Egypt, lives in Cairo and Alexandria till 1948. During that time he gets authorization from Vaghinak to use
-        “Jamanakakic Matenashar” (Modern Lithography) name and published 65 different books, most of them Smbat Byurat’s
-        republications. He had low key life, still was prosecuted by locals. 1948 he repatriated to Soviet Armenia,
-        carrying with him 7,000 books. The ship after dropping 1,500 Armenian repatriates in Batumi, on its way to
-        Russia had fire in board and many lives were lost. </p>
-    <br><br>
-    <p>Hayk-Levon Byurat (1890-1953)</p>
-    <p>With Stalin’s order some of the Armenians were charged as English-American spies and Hayk-Levon was exiled to
-        Siberia. He was skin and bones and authorities decided to send him home 1953 to die there and that is what
-        exactly happen to him. Within days of his return he saw his brother Vaghinak and passed away within week.
-        Vaghinak blame his brother’s wife for his death and never seen her after that. We know that Hayk-Levon had
-        daughter, but we do not know anything about her. </p>
-    <p>This is the story what we were able to find up to now. We are very sad for my grandfather’s brother’s life. I
-        named after him and still digging the history to find more information about him.</p>
-    <br><br>
-    <p>The Byurat Cultural Foundation (BCF) and Vahag Byurat Concepts Inc.</p>
-    <br>
-    <p>The Byurat Cultural Foundation (BCF) was officially established in January 2000 by Haik and Hasmik Byurat in the
-        United States. The foundation&#x27;s purpose is to introduce and translate the literary works of Smbat and
-        Vaghinak Byurat to the Armenian community throughout the world, and especially in the United States. Some of the
-        published works will be translated to English if there is interest. </p>
-    <p>The foundation published 4 books from 1999-2002 in Armenia.</p>
-    <p> The first book published in 1999 is the short self-biography of Vaghinak Byurat titled “My Life’s Memories,” or
-        in Armenian, “Im Kyanki Hoosherits&#x27; &#x27;. In 2002, we also published Vaghinak&#x27;s “Best
-        Writings&#x27;&#x27; or in Armenian, “Endir Edjer” which includes &quot;Aryunot Tashkinak&quot; (translated:
-        &quot;Bloody Handkerchief&quot;) and “Shekhi Vortin” (translated: “Sheik’s Son”).</p>
-    <p>In 2001, we were able to publish one of Smbat Byurat&#x27;s books for the first time in Armenia. It was his first
-        book entitled, “Best of Novels&#x27;&#x27; or in Armenian, “Yerger.”</p>
-    <p>Also, in 2002, the foundation published a book named, “Smbat Byurat’s World of Novels” in Armenian, translated:
-        “Smbat Byurati Vebashkhare.” The book was published by the State Museum of Literature and Art of Armenia.</p>
-    <p>With the publication of these two Smbat Byurat’s books for the very first time in Armenia, we made Vaghinak
-        Byurat’s dream a reality.</p>
-    <p>Byurat Cultural Foundation and Vahag Byurat Concepts Inc., financed and publishing 5-th book in Armenia. That was
-        Smbat Byurat’s “Poems”. Published March of 2022, for Smbat Byurat’s 160-th birthday.</p>
-    <h1>In July 4, 2023, Byurat Cultural Foundation and Vahag Byurat Concepts Inc., financed and publishing 6-th book in
-        Armenia. This was Smbat Byurat’s autobiography called “Diary of Mountain Man”, which used 367 handwritten pages
-        from his archived work, from Yeghishe Charents State Museum of Art and Literature of Armenia.</h1>
-    <h1></h1>
-    <p>2021, Haik and Hasmik Byurat translated first ever English book for Smbat Byurat. By translating Smbat Byurat’s
-        first ever book to English, we are trying to achieve the following:</p>
-    <p>We want our new Armenian generations to learn and cherish our over 3500 years old language, but in case they do
-        forget (in my opinion unbelievable sin against being Armenian), still we want our new generations to come to
-        know their roots.</p>
-    <p> We want the whole world to know what happened before all Armenian massagers of 19-th century and Genocide of
-        1915 in Turkey.</p>
-    <p>Although we lost Byurat Cultural Foundations being a charitable organization 2005 due to NO support from the
-        community, we will still continue to operate our organization to teach and preserve the Armenian language. </p>
-    <br><br>
-    <p>Smbat Byurat School:</p>
-    <p>November 1997, School #125 of Zeytun region of Yerevan was named after Smbat Byurat.</p>
-    <p>From 1997 to 2009 Hasmik and Haik were financing and organizing graduation day with financial gifts to the year’s
-        best teacher, best male and female students. Our family stopped supporting due to an ungrateful school
-        principal. School was also completely rebuilt by Kerkor &quot;Kirk&quot; Kerkorian organization in 2007-2009. In
-        2020 we again reconnected with the school and its new principal. We have high hopes for the future.</p>
-    <p>School participating lot to learn and teach about forgotten and forbidden writer Smbat Byurat</p>
-    <p>2022 children at school celebrated Smbat Byurat’s 160-th Birthday and same evening were part of the new book
-        “Poems” celebration at The Charents Museum of Literature and Arts of Armenia (GAT)</p>
-    <br>
-    <p>Varuzhan, Seda, Ani and Karine Byurat at #125 Smbat Byurat name school</p>
-    <br>
-    <p>Smbat Byurat&#x27;s Works and Book List.</p>
-    <p>From 1908 to 1914 he wrote and published over 40 books</p>
-    <p>Vaghinak and Hayk-Levon published all his works from 1908-1937 in Turkey, Lebanon, Syria and Egypt.</p>
-    <p>Almost impossible to find these books in good condition, since 1980 Byurat family was able to collect ONLY 8
-        original published books by Byurats and 1 published by some other.</p>
-    <p>So, we were hopelessly waiting for another book to show up that we can buy and keep and we were thinking that
-        Smbat Byurat’s most of the books we will not be able to save.</p>
-    <h1>Then we investigated and beginning year 2020 we found most of the books in Armenia’s main library. Most of these
-        books were the ones that was confiscated from our family 1946-1948, proof of it is Vaghinak Byurat’s hand
-        writings on them. That year we meet with Tigran Zargaryan who was instrumental next years to put most of these
-        books digital and make it available on line. Only book we did not find is “Bible” written in Zeytun dialect.
-    </h1>
-    <h1>With this link you can see all the books available written or published by BYURATs</h1>
-    <br>
-    <h1>As of end of 2023, there are 114 items on this list.</h1>
-    <br>
-    <p>Below is list of the books that Smbat Byurat wrote.</p>
-    <br>
-    <p>Prison to Prison: Historical Novel describing 1890 through 1895 </p>
-    <p>4 volumes</p>
-    <br>
-    <br>
-    <p>For the Freedom: Revenge of Zeytun: Historical Novel describing 1894 through 1897</p>
-    <p>4 volumes</p>
-    <br>
-    <br>
-    <p>Yıldız Sasun: Historical Novel describing 1894 through 1896</p>
-    <p>3 volumes</p>
-    <br>
-    <p>Ninety-Six (Throw the blood): Historical Novel describing 1896</p>
-    <p>6 volumes</p>
-    <br>
-    <br>
-    <p>After Sasun (Bunch of Corps): Historical Novel describing after 1896</p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>After Sasun (To Yıldız): Historical Novel describing after 1896</p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>Yıldız Bomb: Historical Novel describing A failed assassination attempted on Sultan Abdul Hamid II -1905</p>
-    <p>4 volumes</p>
-    <br>
-    <p>Veghar (Cowl) waring hero or Bortoximos Priest Taqajyan-Life story of the Priest Hero</p>
-    <p>1 volume</p>
-    <p> </p>
-    <br>
-    <p>Priest of Zeytun, life story of the Grigoris Abardyanc</p>
-    <p>1 volume</p>
-    <p> </p>
-    <p>Bloody gorge: Historical Novel 13-th century Cilicia</p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>Last Castle-Story of the last defense of Cilicia 13-th century.</p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>Queen of the mountains- Short teil from the life of the last Cilicia Queen</p>
-    <p>1 volume</p>
-    <br>
-    <p>Eagle of Avarayr or Vardananq- Drama with 5 acts, 4-th century Armenia’s fight for his independence from Persia
-    </p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>Ani was sold-Historical Novel of 1034-1064 Armenia’s Capital city.</p>
-    <p>1 Volume</p>
-    <br>
-    <br>
-    <p>General History of Armenia, he did not finish this book series, only volume one, which takes you 700-600-year BC
-    </p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>Biography of Digran Yerkat</p>
-    <p>1 volume</p>
-    <p> </p>
-    <br>
-    <p>Parents who kill their Child- Novel from 1890-1900 Cairo life</p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>Temir Mushlu-Life Story of the Mush woman.</p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>Eastern Problem and Armenian Question-Historical political explanation of the Armenian question.</p>
-    <p>1 volume</p>
-    <br>
-    <br>
-    <p>Small book of poems</p>
-    <br>
-    <br>
-    <p>Smbat Byurat’s handwriting from papers at The Charents Museum of Literature and Arts of Armenia (GAT)</p>
-    <br>
-    <p>
-    </p>
-    <p>Other Information and links</p>
-    <p>Story of the “Adana Song/ Adana Lamentation”</p>
-    <p>July 1908, The Young Turk Revolution was a constitutionalist revolution in the Ottoman Empire. The Committee of
-        Union and Progress, an organization of the Young Turks movement, forced Sultan Abdul Hamid II to restore the
-        Ottoman Constitution and recall the parliament.</p>
-    <p>Lots of exiled intellectuals cheered this Revolution and return to homeland, including Smbat Byurat, who returned
-        to Constantinople from Egypt.</p>
-    <p>Ottoman and Armenian revolutionary groups had cooperated to secure the deposition of Sultan Abdul Hamid II and
-        the restoration of constitutional rule in 1908. In reaction, on 31 March 1909 (13 April by the Western Gregorian
-        calendar) a military revolt directed against the CUP seized Constantinople (Istanbul after 1928). While the
-        revolt lasted only ten days, it precipitated a pogrom and massacres in Adana Province against Armenians that
-        lasted over a month.</p>
-    <p>Smbat Byurat wrote his poem “Adana Lamentation- (Adanayi Voghp) in the memory of the victims 1909 and publishes
-        it first time in one of his magazines, if I am not mistaken in “Gaxapar” (Opinion) June of 1909.</p>
-    <p>In 1911, the poem was published in the book &lt;&lt;Հայուն երգարանը&gt;&gt; (Armenians Song Book) by Hmayak
-        Aramyants on page 287 (please see attached picture).</p>
-    <p>In 1912 the poem again was published in &lt;&lt;Կիլիկիոյ Աղետը&gt;&gt; (Disaster of Cilicia) by Hakop Terzeyan on
-        page 851(see attached picture).</p>
-    <p>Unfortunately, after 1940’s when this poem was published again and again…, NO ONE in Armenian Diaspora wrote the
-        writers name (please see attached picture), and in Armenia Smbat Byurat was forbitten literature. Because of
-        this, people called the poem and the song a folk song, Author’s name never being mentioned.</p>
-    <p>In Armenia, singers started singing this song late 1970-s, but this song was sung in Armenian diaspora almost
-        immediately after the poem was written (the fact is that it was published in the song book very first time in
-        1911). Even being a sad song, Armenians still sang this in their gatherings, even in their weddings. </p>
-    <p>First time I ever heard this song was by my aunt Araxi when I was 3 years old, in 1963. When I was 10 years old,
-        my grandpa Vaghinak recited this poem to me couple of times, with deep sadness about his forgotten father. He
-        showed me in the Book &lt;&lt;Զեյթունի պատմությունը&gt;&gt; (History of Zeytun) by H. Pogosyan, where only two
-        of the verses of the poem were on page 371.</p>
-    <p>In America, after looking for a long time, I was able to find this poem in entirety in 1998, and I bought
-        Armenian Alphabet fonts for my computers and typed it for myself. I published it 1999-2000 in my announcement
-        articles to Armenian community about the establishment of the Byurat Cultural Foundation. First 5 years, BCF was
-        charitable organization, but we lost that because of no financial support of the community. Nevertheless, we
-        used those 5 years publishing 4 books in Armenia, putting the cornerstone of the Smbat Byurat’s name, bringing
-        back from forgotten and forbitten status.</p>
-    <p>March of this year, we published Smbat Byurat’s “Poems” book and the “Adana Song/ Adana Lamentation” poem was
-        first time ever published along with ALL the rest of the poems that Smbat Byurat wrote. For the poem’s page,
-        lovely Sibil offered us a URL that if you scan with your cell phone, it will take you to the website, where
-        Sibil is performing the song.</p>
-    <p>April 27, 2022, I watched for the first time an entire 30 minutes of television program created by Hasmik
-        Hakhverdyan with Գրականության և արվեստի թանգարան /Museum of Literature and Art/ of Armenia. In this program they
-        first presented short history of Smbat Byurat’s life, this poem, and Armenian famous singers presenting stories
-        about the poem and the song. This was very beautiful and tastefully created program. I thank Hasmik Hakhverdyan,
-        all the singers-Acabi Gazarian, Flora Martirosyan, Zaruhi Babayan, Nune Yesayan, Sibil Pektorosoglu, Maria
-        Cozette and the entire team for this wonderful program!</p>
-    <p>Ադանայի ողբը (Տարբերակ 2)</p>
-    <p>Կոտորածն անգութ, հայերը թող լան,</p>
-    <p>Անապատ դարձաւ շքեղ Ատանան.</p>
-    <p>Կրակն ու սուրը եւ անխիղճ թալան</p>
-    <p>Ռուբինեանց տունը ա՜խ, ըրին վերան։</p>
-    <p>Րոպէ մը չանցաւ ՚ ու հայոց խեղճեր,</p>
-    <p>Ինկան սուրին տակ խուժանին ահեղ,</p>
-    <p>Ժամեր ու դպրոցք բոցի մէջ կորան,</p>
-    <p>Բիւրաւոր հայեր անխնայ մեռան։</p>
-    <p>Պարապ էր աւա՜ղ, հարուստ Ատանան,</p>
-    <p>Մոխիր էր դարձէր ամբողջ Կիլիկիան.</p>
-    <p>Միայն ապրեցաւ Հաճընը սիրուն,</p>
-    <p>Ինչու չի շարժիր ապառաժ Զէյթուն։</p>
-    <p>Ցերեկ ու գիշեր կրակը մէջէն,</p>
-    <p>Թշնամուն սուրը, գնդակը դրսէն,</p>
-    <p>Ջնջեցին հայը երկրին երեսէն,</p>
-    <p>Արիւն կը վազէ մեր ջինջ գետերէն։</p>
-    <p>The massacre is ruthless, let the Armenians cry,</p>
-    <p>The glorious Adana turned to a desert.</p>
-    <p>Fire and sword and ruthless plunder</p>
-    <p>Oh…, they ransacked the house of the Rubenians.</p>
-    <p>Not a minute passed and the poor Armenians,</p>
-    <p>They fell under the sword in terror of the mob,</p>
-    <p>Churches and school were lost in the flames,</p>
-    <p>Many Armenians died carelessly.</p>
-    <p>Alas, rich Adana was idle!</p>
-    <p>The whole of Cilicia was reduced to ashes,</p>
-    <p>Only beautiful Hadjin Survived,</p>
-    <p>Why did not Zeytun move from his cliff?</p>
-    <p>From the fire day and night,</p>
-    <p>Enemy sword, bullet from outside,</p>
-    <p>The Armenians were wiped off the face of the earth,</p>
-    <p>Blood running from our Clear rivers.</p>
-    <p>Translation by Haik Byurat</p>
-    <br><br>
-    <h3 id="links">Other Links.</h3>
-    <br>
-    <p>YOUTUBE.COM</p>
-    <p>Հրատարակվել է արմատներով զեյթունցի Սմբատ Բյուրատի ստեղծագործությունների ժողովածուն</p>
-    <br><br>
-    <h1>Smbat Byurat 4 Part Videos</h1>
-    <br><br><br>
-    <p>Smbat Vaghinak Byurat - His engineering and technical achievements.</p>
-    <br>
-    <p>My dad is one of the smartest individuals that I have met in my technical life. Physical work never interested
-        him; however, he was a real scientist all of his life. </p>
-    <p>In 1957 Smbat graduated from Yerevan Polytechnic Institute. Twenty years later I followed in his footsteps by
-        excelling in the entrance exams, and chose the same specialty in Electro-Chemistry at his alma mater. </p>
-    <p>After immigrating to the U.S.A., he never got his dream job. It was a 9-year-venture that he eventually gave up
-        without a single complaint.</p>
-    <p>He will be 89-years-old within weeks, and I want to dedicate this post to the work he has accomplished in his
-        lifetime. Most of his achievements had been credited to his employers in order to be granted permission to
-        publish. </p>
-    <p>My dad was compensated ~$90 for the 2 technical inventions that he worked on, when the USSR sold them to American
-        companies’ for hundreds of millions of dollars in the 1960’s. The engine was used at that time to create
-        artificial diamonds by using a crystallization process.</p>
-    <p>I spent lots of time to scan and prep all of these materials so that you can view it on YouTube: </p>
-    <p>Smbat Byurat Publications</p>
-    <p>1. Use of several polymers in the anticorrosion technology. </p>
-    <p>NAUCHNO-TEKHNICHESKI SBORNIK, (Chemistry and Chemical Technology Series), No.2, 1962, Yerevan (Page 33).</p>
-    <p>2. Protection from corrosion by rubber coatings.</p>
-    <p>MASHINOSTROITEL No.3, 1964 Moscow (Page 32)</p>
-    <p>3. Influence of polymerization inhibitors on resistance of acid resistant mastics (pastes) in chloroprene
-        containing environments. </p>
-    <p>PROMISHLENNOST ARMENII No.8, 1965, Yerevan (page 39)</p>
-    <p>4. Gluing fluorine plastics. </p>
-    <p>PLASTICHESKIE MASSY No.7, 1967, Moscow (Page 20)</p>
-    <p>5. Gluing polytetrafluoroethylene.</p>
-    <p>PLASTICHESKIE MASSY No.8, 1968, Moscow (Page 74)</p>
-    <p>6. Protection of equipment (apparatus) with pressure-vulcanized rubber on the bases of Nairit</p>
-    <p>KHIMICHESKOIE E NEFTIANOE MASHINOSTROENIE No.4, 1968, Moscow (Page 24)</p>
-    <p>7. Research of affect of the composition of Nairit rubber coating on their chemical resistance</p>
-    <p>BORBA S KOROZIEI KEM NEFTEPERERAB PROM SBORNIK No.2, 1968, Moscow (page 165)</p>
-    <p>8. Research of affect of the vulcanization conditions on the chemical resistance of rubbers based on Nairit</p>
-    <p>BORBA S KOROZIEI KEM NEFTEPERERAB PROM SBORNIK No.2, 1968, Moscow (page 175)</p>
-    <p>9. Removal of old rubber coating from the internal surface of steel equipment (apparatus)</p>
-    <p>OBORUDOVANIE; EXPLUATATSIA, REMONT I ZASHCHITA OT KOROZIEI v KEM PROM No.10, 1973, Moscow (page 15)</p>
-    <p>Smbat Byurat Publications, page 2</p>
-    <p>10. Super slow speed motors, slow but precise</p>
-    <p>TEKHNIKA MOLODEZHI No.8, 1974, Moscow (page 22)</p>
-    <p>11. Impact of the components and methods of vulcanization on the chemical resistance of Nairit rubber.</p>
-    <p>Equipment, its use, repair and protection against corrosion in chemical industry.</p>
-    <p>OBORUDOVANIE; EXPLUATATSIA, REMONT I ZASHCHITA OT KOROZIEI v KEM PROM No.12, 1973, Moscow (page 13)</p>
-    <p>12. Chemical resistance of resin per Nairit</p>
-    <p>PROMISHLENNOST ARMENII No.7, 1968, Yerevan (page 29)</p>
-    <p>13. Electric motor of constant current made on bases of electrolytic element when movement of current is
-        happening with movement of matter from anode to cathode.</p>
-    <p>IZOBRETATEL I RATHSINALIZATOR No.10, 1977, Moscow (page 25)</p>
-    <p>14. About chemical resistance of rubber on the bases of Nairit</p>
-    <p>PROMISHLENNOST ARMENII No.8, 1967, Yerevan (page 46)</p>
-    <p>15. Influence of prescribed factors and methods of vulcanization on the acidity of Nairit rubbers</p>
-    <p>PROMISHLENNOST ARMENII No.12, 1974, Yerevan (page 48)</p>
-    <p>16. Electrical motors: Motors without any moveable parts inside By Armenian Inventors S. Byurat and P. Nadjarian.
-    </p>
-    <p>SOVETSKI SOUZ, No.1, 1978, Moscow, 1978 (Page 43)</p>
-    <p>Chemical Abstracts:</p>
-    <p>v68, 40636x, 1968 v69, 97405w, 1968 v69, 36883d, 1968</p>
-    <p>v70, 12720t, 1969 v70, 12410s, 1969 v85, 44791z, 1970</p>
-    <p>85., 144399q, 1976</p>
-    <p>Smbat Byurat Inventions</p>
-    <p>1. Electric DC Motor, Soviet Invention No. 237964 int.C1. H O2K.</p>
-    <p>2. Electric DC Motor, Soviet Invention No. 312355 int.C1. H O2N 4/00.</p>
-    <br>
-    <br>
-    <br><img src='images/image0.png'><img src='images/image1.png'><img src='images/image2.png'><img
-        src='images/image3.png'><img src='images/image6.png'><img src='images/image7.png'><img
-        src='images/image12.png'><img src='images/image15.png'><img src='images/image16.png'><img
-        src='images/image18.jpeg'><img src='images/image19.png'><img src='images/image22.png'><img
-        src='images/image23.png'><img src='images/image24.jpeg'><img src='images/image25.png'>
+    <div class="main-content">
+        <h3 id="Smbat">Smbat Byurat </h3>
+        <p><b>Smbat Byurat’s biography is written by his son Hayk-Levon Byurat</b></p>
+        <p>Smbat Byurat was born on March 3rd, 1862 in Zeytun, at Shovoryan (or Baz Bayir) quarter. He received his
+            elementary education in Zeytun. 9 years old, he left Zeytun and attended and graduated from Jharankavorats
+            School (Armenian Theological Seminary) in Jerusalem, then continued his education in Sorbonne, France. </p>
+        <p>In 1880 he returned to Cilicia, started helping the education system, first as a helper of the principal,
+            later
+            as a principal of Cilicia&#x27;s Marash Central School district. 1880 Byurat organized “Kilikio pahapan”
+            (The
+            protector of Cilicia) organization, where he was able to connect with all religious centers of Cilicia and
+            get
+            the first census done in Cilicia. He was teaching in Zeytun from 1882 to 1884. In 1885 he opened a private
+            school and taught in Sis for only 6 months, but could not continue due to climate and that summer he went to
+            Constantinople and met times’ biggest and greatest writers there. In “Erkragund &#x27;&#x27; (The Globe), he
+            published his first writing “Meryalner” (The Dead) in the August 1885 issue.</p>
+        <p>In 1885 he published his first book, which was about the geography and history of the Zeytun region. In 1885
+            he
+            also met and married to Xas-gyux Orphanage school teacher, Yevdoxia Shishmanyan. </p>
+        <p>In 1886 he returned to Zeytun with his wife as a Union School inspector. On August 10, 1886, Yevdoxia gave
+            birth
+            to his first son Vaghinak. Smbat spent much time travelling to establish schools all around the region. In
+            1887
+            from the Zeytun great fire where 950 houses burned, Smbat lost his family house and with his wife left for
+            Constantinople. Less than 6 months later, he gets an assignment at Samson and spends 3 years there. In 1890
+            with
+            his pregnant wife and child, he was on his way to Zeytun, when he was arrested at Yerpuz village and they
+            were
+            taken to Marash prison, where Smbat&#x27;s second son: Hayk-Levon was born September 1890.</p>
+        <p>Smbat and 48 other political prisoners were kept in prison until the end of 1895 in Aleppo. After he was
+            freed,
+            he relocated to Constantinople (Istanbul).</p>
+
+
+        <div class="image-container"><img src='images/image24.jpeg'></div>
+        <br>
+        <p>In 1896, he realized that Sultan’s police were after him again, forcing him and his family to flee to Egypt.
+            He
+            published his first newspaper “Nor Or &#x27;&#x27; (New Day) and Puniq (Phoenix) in Egypt. Smbat opened
+            private
+            schools for four years in Cairo and Alexandria. Tired of the political party’s constant arguments, he
+            completely
+            stopped being a political figure in 1900. Same year he signed agreements with &quot;Hratarakchakan&quot;
+            (Publication) of Tbilisi to send them his unpublished works for mass publication, but soon he learned that
+            &quot;Hratarakchakan&quot; was bankrupt. With help, he again started publication of Puniq (Phoenix) at Cairo
+            for
+            another four years.</p>
+        <p>From 1904 he was inspector-director for the school district, at the same time he was Alexandria cities Mixed
+            Court systems Officer. During these years he was traveling to Venice Italy and other cities with his sons.
+            His
+            sons were applying to go school in St. Lazare, Venice, Italy. In 1907 he went to Romania for 10 months, but
+            having fallen victim to political games, he had to leave the country quickly. He moved to Bulgaria to teach,
+            where he was caught by spies and arrested again by the Sultan’s police. On the way to Constantinople, news
+            arrives that the Young Turks overthrow the Sultan, and Smbat was able to escape. Smbat with his family
+            returns
+            to Constantinople (Istanbul). In 1908 he was elected as a National Representative for 10 years to represent
+            Zeytun-Marash region. End of that year, with his older son -Vaghinak he opened a Publishing House. </p>
+        <br>
+
+        <div class="image-container"><img src='images/image18.jpeg'></div>
+        <br>
+        <p>In 1910 with his younger son Hayk-Levon he came back home to Zeytun to visit his parents’ graves. For three
+            and
+            half months they visited almost all of Cilicia&#x27;s major locations. On their way back, they visited
+            Athens,
+            Greece.</p>
+        <p>From 1908 to 1914 he wrote and published over 40 books while fighting political wars to free Armenia. Then
+            came
+            World War I, where the Turks decided to address “The Armenian Question,” by exiling and killing over two
+            million
+            Armenians from Turkish-Armenia. Smbat Byurat, along with most of the Armenian political and cultural
+            leaders,
+            was arrested and exiled in April of 1915 to Ayaş, Ottoman Turkey. All were massacred; according to rumors,
+            he
+            was stoned to death. His last words sent to his sons were: “I am a dead man now. Forget about my body. Save
+            my
+            writings...”.</p>
+
+        <div class="image-container">
+            <img src='images/image6.png'><img src='images/image15.png'>
+            <p> Smbat Byurat & wife Yevdoxia Byurat
+            </p>
+        </div>
+
+        <h3 id="Vaghinak">Vaghinak Byurat</h3>
+        <p>Vaghinak Byurat was born on August 10, 1886 in Zeytun, at Shovoryan (or Baz Bayir) quarter. He received his
+            elementary education from both parents. He went to get higher education in Venice Italy at St. Lazare,
+            travels
+            lot and has learn publishing business in Europe. First he works for other publishers, than when family
+            returns
+            to Constantinople (Istanbul) in 1908, with his dad opens “Jamanakakic Matenashar” (Modern Litography)
+            publishing
+            house.</p>
+        <p>He married first time 1911 in Istanbul Turkey. His first wife’s name was Araxi and their god father was
+            Grigor
+            Zohrap.</p>
+        <p>He had 2 daughters from that marriage-Anais and Sirarpie, both stayed in Istanbul as much as we know under
+            their
+            uncle’s care till they got married. </p>
+        <p>1912 Vaghinak was on “Titanic” and survived when he was taking 6000 books to America.</p>
+        <p>In 1925 Vaghinak left Turkey and lived in Lebanon and in and out in Syria. A little before then Hayk-Levon
+            with
+            his mother had moved to Cairo, Egypt.</p>
+        <p>Vaghinak remarried in 1933, and his only son was born in 1934, named Smbat in his grandfather’s memory.</p>
+
+        <div class="image-container">
+            <img src="images/image0.png" alt="Vaghinak and Smbat Jr. in Lebanon, 1937">
+            <p>Vaghinak and Smbat Jr. 1937 Lebanon</p>
+        </div>
+
+        <p>Vaghinak Byurat in 1946 with his family repatriated to Soviet Armenia. They took with them over 6,000 books
+            to
+            Armenia. Most of the books were confiscated from them as forbidden anti-governmental and nationalistic
+            literature. </p>
+        <p>The only literary work Vaghinak was able to do in Soviet Armenia was in commemoration of the 50th anniversary
+            of
+            Armenian Genocide, he published Smbat Byurat’s short biography in a magazine.</p>
+        <p>Vaghinak Byurat lived a long life to his old years. During Christmas of 1965 Vaghinak fell on the street and
+            broke his hip. For 80 years old Vaghinak it was very hard to become bed bound. </p>
+        <br>
+
+        <div class="image-container">
+            <img src='images/image25.png'>
+            <p>With grandson Haik, 1963 Yerevan, Armenia</p>
+        </div>
+        <p>Now he uses his time educating and teaching his 5 years old grandson. He taught Haik to play card games and
+            backgammon. But education took first priority, teaching him mathematics and Armenian language. Later years
+            he
+            taught him Armenian Literature, making a multi-page list of the books for Haik to read. He taught Haik to
+            Love
+            the Armenian Language unconditionally. Haik was taking care of his grandpa, loved and appreciated him a lot.
+            Haik especially loved to hear his grandpa’s life stories, Armenian and foreign tales. One of the ways
+            Vaghinak
+            described someone’s death is that he did “poof” and passed. That is exactly how he passed January 6, 1972,
+            without suffering and like a candle burning all the way to the end.</p>
+        <p>His major dream was to see his father’s works published in Armenia, but he did not succeed. He died with hope
+            in
+            his heart. It is fair to state that his own people forgot Smbat Byurat’s literary contributions and heroic
+            fall.
+            Artists would sing one of Smbat Byurat’s famous songs “Adana Lamentation” (Adanayi Oxb@), yet it was
+            recognized
+            as a folk song by an unknown writer. His heirs did not fight the Soviet bureaucracy, and in 1980 they
+            immigrated
+            to the United States with empty packets…</p>
+        <br>
+        <div class="image-container">
+            <img src='images/image22.png'>
+            <p>Vaghinak (1886-1972) and Bersabe (1895-1975)<br>Byurats gravesite in Armenia</p>
+        </div>
+        <br><br>
+        <h3 id="Hayk-Levon">Hayk-Levon Byurat</h3>
+        </p>
+        <p>Younger son of Smbat Byurat was born in Marash prison, September 1890: Here is how Smbat Byurat describing
+            his
+            birth in the Marash prison:</p>
+        <p>Young Woman was screaming from the pain with one voice, screaming for a couple of seconds, paused to cry, and
+            then she was screaming again, more pitiful and more powerful.</p>
+        <p>-Let’s clean the room, please leave the room, all of you, -asked doctor Polatyan.</p>
+        <p>Fatma Tutu escorted all of them out-both Armenians and both Turks. She returned to the cell, proud of her
+            job’s
+            power and duty. </p>
+        <p>The child, forgotten by everyone (Smbat’s first son), was sleeping in the corner of the cell, while her
+            mother
+            was still suffering.</p>
+        <p>A scream came out of the giving birth mother, which was signaling the critical second. Mother’s scream was
+            followed by the baby&#x27;s scream.</p>
+        <p>That scream was from a newborn Armenian boy, who was announcing his victorious entrance to the tyranny of the
+            world. That was the cry of the future soldier, who was opening his eyes inside the Crime and Pain room. They
+            wrapped the baby in the leftover clothes of the prisoners, and the dirt was his bed. Fatma Tutu was in joy
+            and
+            holiday, because she had a new prisoner under her care-a newborn baby prisoner. The mother sadly looked at
+            her
+            newborn. She took her newborn and with maternal instinct gave him a breast to suck milk from. And he
+            carelessly
+            sucked the milk, the milk that comes from the Suffering and Pain fountain. Looked the mother to her newborn
+            proud and happy, and she hugged him, giving him her first motherly kisses on his chicks. She was whispering
+            an
+            old sweet lullaby. More she looked, the happier she became. She was so happy that she brought life to the
+            place
+            where lives get lost every day. </p>
+        <p>These feelings were comforting her, making her forget reality, the four cold and dark walls reality. She was
+            thinking that the newborn baby would be the reason for her to get her freedom, since it was unimaginable to
+            live
+            in these conditions. She had big hopes for her soon to come freedom. With that hope in her mind, she slept
+            the
+            baby on her chest and the other child on her side.</p>
+        <p>Forty days later:</p>
+        <p>In Marash’s St. Stepannos church, which was sitting right under the Marash’s Castle, there was a christening
+            in
+            process, with a large crowd present. They were baptizing the prison born baby boy. At the baby’s christening
+            present were father, his uncle Avetiq and Der-Ghazar high priest grandfather, who despite his eighty plus
+            years,
+            rushed to Marash after getting his son’s letter. Although the baby&#x27;s mother asked to name the baby
+            Tsavak
+            (Painful) because he was born in jail, his father wanted to name him Hayk-Levon: Hayk for the Armenian
+            Nation’s
+            first ancestor and freedom fighter, and Levon for the last Armenian King, imprisoned in chains… The newborn
+            was
+            named Hayk-Levon.</p>
+        <p> Family suffered hard 5 years of Smbat Byurat prisoning first in Marash, later at Aleppo. After relise of
+            prison
+            family goes to Constantinople and Smbat becomes teacher in Armenian school, but knowing that sultan’s spies
+            are
+            after him, he finds a way to escape from there to Egypt 1896.</p>
+        <p>Hayk got most of his knowledge at home, first from his parents, later from his brother. With family he lives
+            in
+            Alexandria from 1896-1908, then moves to Constantinople with his family. He worked with his brother and
+            learn
+            book publishing business. Hayk-Levon lives with his mother Yevdoxia after Armenian genocide. He got married
+            but
+            we do not have name of the wife. It was very unhappy marriage per Vaghinak. 1925 he moves with mother and
+            wife
+            to Egypt, lives in Cairo and Alexandria till 1948. During that time he gets authorization from Vaghinak to
+            use
+            “Jamanakakic Matenashar” (Modern Lithography) name and published 65 different books, most of them Smbat
+            Byurat’s
+            republications. He had low key life, still was prosecuted by locals. 1948 he repatriated to Soviet Armenia,
+            carrying with him 7,000 books. The ship after dropping 1,500 Armenian repatriates in Batumi, on its way to
+            Russia had fire in board and many lives were lost. </p>
+        <br><br>
+        <div class="image-container"><img src='images/image16.png'>
+            <p>Hayk-Levon Byurat (1890-1953)</p>
+        </div>
+        <p>With Stalin’s order some of the Armenians were charged as English-American spies and Hayk-Levon was exiled to
+            Siberia. He was skin and bones and authorities decided to send him home 1953 to die there and that is what
+            exactly happen to him. Within days of his return he saw his brother Vaghinak and passed away within week.
+            Vaghinak blame his brother’s wife for his death and never seen her after that. We know that Hayk-Levon had
+            daughter, but we do not know anything about her. </p>
+        <p>This is the story what we were able to find up to now. We are very sad for my grandfather’s brother’s life. I
+            named after him and still digging the history to find more information about him.</p>
+        <br><br>
+        <h3 id="BCF">The Byurat Cultural Foundation (BCF) and Vahag Byurat Concepts Inc.</h3>
+        <br>
+        <p>The Byurat Cultural Foundation (BCF) was officially established in January 2000 by Haik and Hasmik Byurat in
+            the
+            United States. The foundation&#x27;s purpose is to introduce and translate the literary works of Smbat and
+            Vaghinak Byurat to the Armenian community throughout the world, and especially in the United States. Some of
+            the
+            published works will be translated to English if there is interest. </p>
+        <p>The foundation published 4 books from 1999-2002 in Armenia.</p>
+        <p> The first book published in 1999 is the short self-biography of Vaghinak Byurat titled “My Life’s Memories,”
+            or
+            in Armenian, “Im Kyanki Hoosherits&#x27; &#x27;. In 2002, we also published Vaghinak&#x27;s “Best
+            Writings&#x27;&#x27; or in Armenian, “Endir Edjer” which includes &quot;Aryunot Tashkinak&quot; (translated:
+            &quot;Bloody Handkerchief&quot;) and “Shekhi Vortin” (translated: “Sheik’s Son”).</p>
+        <p>In 2001, we were able to publish one of Smbat Byurat&#x27;s books for the first time in Armenia. It was his
+            first
+            book entitled, “Best of Novels&#x27;&#x27; or in Armenian, “Yerger.”</p>
+        <p>Also, in 2002, the foundation published a book named, “Smbat Byurat’s World of Novels” in Armenian,
+            translated:
+            “Smbat Byurati Vebashkhare.” The book was published by the State Museum of Literature and Art of Armenia.
+        </p>
+        <p>With the publication of these two Smbat Byurat’s books for the very first time in Armenia, we made Vaghinak
+            Byurat’s dream a reality.</p>
+        <p>Byurat Cultural Foundation and Vahag Byurat Concepts Inc., financed and publishing 5-th book in Armenia. That
+            was
+            Smbat Byurat’s “Poems”. Published March of 2022, for Smbat Byurat’s 160-th birthday.</p>
+        <p>In July 4, 2023, Byurat Cultural Foundation and Vahag Byurat Concepts Inc., financed and publishing 6-th
+            book in
+            Armenia. This was Smbat Byurat’s autobiography called “Diary of Mountain Man”, which used 367 handwritten
+            pages
+            from his archived work, from Yeghishe Charents State Museum of Art and Literature of Armenia.</p>
+
+        <p>2021, Haik and Hasmik Byurat translated first ever English book for Smbat Byurat. By translating Smbat
+            Byurat’s
+            first ever book to English, we are trying to achieve the following:</p>
+        <p>We want our new Armenian generations to learn and cherish our over 3500 years old language, but in case they
+            do
+            forget (in my opinion unbelievable sin against being Armenian), still we want our new generations to come to
+            know their roots.</p>
+        <p> We want the whole world to know what happened before all Armenian massagers of 19-th century and Genocide of
+            1915 in Turkey.</p>
+        <p>Although we lost Byurat Cultural Foundations being a charitable organization 2005 due to NO support from the
+            community, we will still continue to operate our organization to teach and preserve the Armenian language.
+        </p>
+        <br><br>
+        <h3 id="school">Smbat Byurat School:</h3>
+        <p>November 1997, School #125 of Zeytun region of Yerevan was named after Smbat Byurat.</p>
+        <p>From 1997 to 2009 Hasmik and Haik were financing and organizing graduation day with financial gifts to the
+            year’s
+            best teacher, best male and female students. Our family stopped supporting due to an ungrateful school
+            principal. School was also completely rebuilt by Kerkor &quot;Kirk&quot; Kerkorian organization in
+            2007-2009. In
+            2020 we again reconnected with the school and its new principal. We have high hopes for the future.</p>
+        <p>School participating lot to learn and teach about forgotten and forbidden writer Smbat Byurat</p>
+        <p>2022 children at school celebrated Smbat Byurat’s 160-th Birthday and same evening were part of the new book
+            “Poems” celebration at The Charents Museum of Literature and Arts of Armenia (GAT)</p>
+        <br>
+
+        <div class="image-container"><img src='images/image1.png'>
+            <p>Varuzhan, Seda, Ani & Karine Byurat
+                <br> #125 Smbat Byurat name school
+            </p>
+        </div>
+        <br>
+        <h3 id="books">Smbat Byurat&#x27;s Works and Book List.</h3>
+        <p>From 1908 to 1914 he wrote and published over 40 books</p>
+        <p>Vaghinak and Hayk-Levon published all his works from 1908-1937 in Turkey, Lebanon, Syria and Egypt.</p>
+        <p>Almost impossible to find these books in good condition, since 1980 Byurat family was able to collect ONLY 8
+            original published books by Byurats and 1 published by some other.</p>
+        <p>So, we were hopelessly waiting for another book to show up that we can buy and keep and we were thinking that
+            Smbat Byurat’s most of the books we will not be able to save.</p>
+        <p>Then we investigated and beginning year 2020 we found most of the books in Armenia’s main library. Most of
+            these
+            books were the ones that was confiscated from our family 1946-1948, proof of it is Vaghinak Byurat’s hand
+            writings on them. That year we meet with Tigran Zargaryan who was instrumental next years to put most of
+            these
+            books digital and make it available on line. Only book we did not find is “Bible” written in Zeytun dialect.
+        </p>
+        <p>With this link you can see all the books available written or published by BYURATs</p>
+        <br>
+        <p>As of end of 2023, there are 114 items on this list.</p>
+        <br>
+        <p>Below is list of the books that Smbat Byurat wrote.</p>
+        <br>
+        <p>Prison to Prison: Historical Novel describing 1890 through 1895 </p>
+        <p>4 volumes</p>
+        <br>
+        <br>
+        <p>For the Freedom: Revenge of Zeytun: Historical Novel describing 1894 through 1897</p>
+        <p>4 volumes</p>
+        <br>
+        <br>
+        <p>Yıldız Sasun: Historical Novel describing 1894 through 1896</p>
+        <p>3 volumes</p>
+        <br>
+        <p>Ninety-Six (Throw the blood): Historical Novel describing 1896</p>
+        <p>6 volumes</p>
+        <br>
+        <br>
+        <p>After Sasun (Bunch of Corps): Historical Novel describing after 1896</p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>After Sasun (To Yıldız): Historical Novel describing after 1896</p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>Yıldız Bomb: Historical Novel describing A failed assassination attempted on Sultan Abdul Hamid II -1905</p>
+        <p>4 volumes</p>
+        <br>
+        <p>Veghar (Cowl) waring hero or Bortoximos Priest Taqajyan-Life story of the Priest Hero</p>
+        <p>1 volume</p>
+        <p> </p>
+        <br>
+        <p>Priest of Zeytun, life story of the Grigoris Abardyanc</p>
+        <p>1 volume</p>
+        <p> </p>
+        <p>Bloody gorge: Historical Novel 13-th century Cilicia</p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>Last Castle-Story of the last defense of Cilicia 13-th century.</p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>Queen of the mountains- Short teil from the life of the last Cilicia Queen</p>
+        <p>1 volume</p>
+        <br>
+        <p>Eagle of Avarayr or Vardananq- Drama with 5 acts, 4-th century Armenia’s fight for his independence from
+            Persia
+        </p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>Ani was sold-Historical Novel of 1034-1064 Armenia’s Capital city.</p>
+        <p>1 Volume</p>
+        <br>
+        <br>
+        <p>General History of Armenia, he did not finish this book series, only volume one, which takes you 700-600-year
+            BC
+        </p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>Biography of Digran Yerkat</p>
+        <p>1 volume</p>
+        <p> </p>
+        <br>
+        <p>Parents who kill their Child- Novel from 1890-1900 Cairo life</p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>Temir Mushlu-Life Story of the Mush woman.</p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>Eastern Problem and Armenian Question-Historical political explanation of the Armenian question.</p>
+        <p>1 volume</p>
+        <br>
+        <br>
+        <p>Small book of poems</p>
+        <br>
+        <br>
+        <p>Smbat Byurat’s handwriting from papers at The Charents Museum of Literature and Arts of Armenia (GAT)</p>
+        <br>
+        <br>
+        <p>Other Information and links</p>
+        <p>Story of the “Adana Song/ Adana Lamentation”</p>
+        <p>July 1908, The Young Turk Revolution was a constitutionalist revolution in the Ottoman Empire. The Committee
+            of
+            Union and Progress, an organization of the Young Turks movement, forced Sultan Abdul Hamid II to restore the
+            Ottoman Constitution and recall the parliament.</p>
+        <p>Lots of exiled intellectuals cheered this Revolution and return to homeland, including Smbat Byurat, who
+            returned
+            to Constantinople from Egypt.</p>
+        <p>Ottoman and Armenian revolutionary groups had cooperated to secure the deposition of Sultan Abdul Hamid II
+            and
+            the restoration of constitutional rule in 1908. In reaction, on 31 March 1909 (13 April by the Western
+            Gregorian
+            calendar) a military revolt directed against the CUP seized Constantinople (Istanbul after 1928). While the
+            revolt lasted only ten days, it precipitated a pogrom and massacres in Adana Province against Armenians that
+            lasted over a month.</p>
+        <p>Smbat Byurat wrote his poem “Adana Lamentation- (Adanayi Voghp) in the memory of the victims 1909 and
+            publishes
+            it first time in one of his magazines, if I am not mistaken in “Gaxapar” (Opinion) June of 1909.</p>
+        <p>In 1911, the poem was published in the book &lt;&lt;Հայուն երգարանը&gt;&gt; (Armenians Song Book) by Hmayak
+            Aramyants on page 287 (please see attached picture).</p>
+        <p>In 1912 the poem again was published in &lt;&lt;Կիլիկիոյ Աղետը&gt;&gt; (Disaster of Cilicia) by Hakop
+            Terzeyan on
+            page 851(see attached picture).</p>
+        <p>Unfortunately, after 1940’s when this poem was published again and again…, NO ONE in Armenian Diaspora wrote
+            the
+            writers name (please see attached picture), and in Armenia Smbat Byurat was forbitten literature. Because of
+            this, people called the poem and the song a folk song, Author’s name never being mentioned.</p>
+        <p>In Armenia, singers started singing this song late 1970-s, but this song was sung in Armenian diaspora almost
+            immediately after the poem was written (the fact is that it was published in the song book very first time
+            in
+            1911). Even being a sad song, Armenians still sang this in their gatherings, even in their weddings. </p>
+        <p>First time I ever heard this song was by my aunt Araxi when I was 3 years old, in 1963. When I was 10 years
+            old,
+            my grandpa Vaghinak recited this poem to me couple of times, with deep sadness about his forgotten father.
+            He
+            showed me in the Book &lt;&lt;Զեյթունի պատմությունը&gt;&gt; (History of Zeytun) by H. Pogosyan, where only
+            two
+            of the verses of the poem were on page 371.</p>
+        <p>In America, after looking for a long time, I was able to find this poem in entirety in 1998, and I bought
+            Armenian Alphabet fonts for my computers and typed it for myself. I published it 1999-2000 in my
+            announcement
+            articles to Armenian community about the establishment of the Byurat Cultural Foundation. First 5 years, BCF
+            was
+            charitable organization, but we lost that because of no financial support of the community. Nevertheless, we
+            used those 5 years publishing 4 books in Armenia, putting the cornerstone of the Smbat Byurat’s name,
+            bringing
+            back from forgotten and forbitten status.</p>
+        <p>March of this year, we published Smbat Byurat’s “Poems” book and the “Adana Song/ Adana Lamentation” poem was
+            first time ever published along with ALL the rest of the poems that Smbat Byurat wrote. For the poem’s page,
+            lovely Sibil offered us a URL that if you scan with your cell phone, it will take you to the website, where
+            Sibil is performing the song.</p>
+        <p>April 27, 2022, I watched for the first time an entire 30 minutes of television program created by Hasmik
+            Hakhverdyan with Գրականության և արվեստի թանգարան /Museum of Literature and Art/ of Armenia. In this program
+            they
+            first presented short history of Smbat Byurat’s life, this poem, and Armenian famous singers presenting
+            stories
+            about the poem and the song. This was very beautiful and tastefully created program. I thank Hasmik
+            Hakhverdyan,
+            all the singers-Acabi Gazarian, Flora Martirosyan, Zaruhi Babayan, Nune Yesayan, Sibil Pektorosoglu, Maria
+            Cozette and the entire team for this wonderful program!</p>
+        <p>Ադանայի ողբը (Տարբերակ 2)
+            <br>
+            Կոտորածն անգութ, հայերը թող լան,
+            <br>
+            Անապատ դարձաւ շքեղ Ատանան.
+            <br>
+            Կրակն ու սուրը եւ անխիղճ թալան
+            <br>
+            Ռուբինեանց տունը ա՜խ, ըրին վերան։
+            <br>
+            Րոպէ մը չանցաւ ՚ ու հայոց խեղճեր,
+            <br>
+            Ինկան սուրին տակ խուժանին ահեղ,
+            <br>
+            Ժամեր ու դպրոցք բոցի մէջ կորան,
+            <br>
+            Բիւրաւոր հայեր անխնայ մեռան։
+            <br>
+            Պարապ էր աւա՜ղ, հարուստ Ատանան,
+            <br>
+            Մոխիր էր դարձէր ամբողջ Կիլիկիան.
+            <br>
+            Միայն ապրեցաւ Հաճընը սիրուն,
+            <br>
+            Ինչու չի շարժիր ապառաժ Զէյթուն։
+            <br>
+            Ցերեկ ու գիշեր կրակը մէջէն,
+            <br>
+            Թշնամուն սուրը, գնդակը դրսէն,
+            <br>
+            Ջնջեցին հայը երկրին երեսէն,
+            <br>
+            Արիւն կը վազէ մեր ջինջ գետերէն։
+        </p>
+        <p>
+            The massacre is ruthless, let the Armenians cry,
+            <br>
+            The glorious Adana turned to a desert.
+            <br>
+            Fire and sword and ruthless plunder
+            <br>
+            Oh…, they ransacked the house of the Rubenians.
+            <br>
+            Not a minute passed and the poor Armenians,
+            <br>
+            They fell under the sword in terror of the mob,
+            <br>
+            Churches and school were lost in the flames,
+            <br>
+            Many Armenians died carelessly.
+            <br>
+            Alas, rich Adana was idle!
+            <br>
+            The whole of Cilicia was reduced to ashes,
+            <br>
+            Only beautiful Hadjin Survived,
+            <br>
+            Why did not Zeytun move from his cliff?
+            <br>
+            From the fire day and night,
+            <br>
+            Enemy sword, bullet from outside,
+            <br>
+            The Armenians were wiped off the face of the earth,
+            <br>
+            Blood running from our Clear rivers.
+            <br><br>
+            Translation by Haik Byurat
+
+
+
+        </p>
+        <br><br>
+        <h3 id="links">Other Links.</h3>
+        <br>
+        <p>YOUTUBE.COM</p>
+        <p>Հրատարակվել է արմատներով զեյթունցի Սմբատ Բյուրատի ստեղծագործությունների ժողովածուն</p>
+        <br><br>
+        <h4>Smbat Byurat 4 Part Videos</h4>
+        <ul>
+            <li>
+                <a
+                    href="https://www.youtube.com/watch?v=Jy4H1fW7DXU&ab_channel=HaikByurat">https://www.youtube.com/watch?v=Jy4H1fW7DXU&ab_channel=HaikByurat</a>
+            </li>
+            <li>
+                <a
+                    href="https://www.youtube.com/watch?v=j3HoRysZNUI&t=14s&ab_channel=HaikByurat">https://www.youtube.com/watch?v=j3HoRysZNUI&t=14s&ab_channel=HaikByurat</a>
+            </li>
+            <li>
+                <a
+                    href="https://www.youtube.com/watch?v=WPmas6OMbDw&ab_channel=HaikByurat">https://www.youtube.com/watch?v=WPmas6OMbDw&ab_channel=HaikByurat</a>
+            </li>
+            <li>
+                <a
+                    href="https://www.youtube.com/watch?v=3Vt3umny6VY&t=2s&ab_channel=HaikByurat">https://www.youtube.com/watch?v=3Vt3umny6VY&t=2s&ab_channel=HaikByurat</a>
+            </li>
+        </ul>
+        <h3 id="Smbat2">Smbat Vaghinak Byurat - His engineering and technical achievements.</h3>
+        <div class="image-container"><img src='images/image3.png'></div>
+
+        <br>
+        <p>My dad is one of the smartest individuals that I have met in my technical life. Physical work never
+            interested him; however, he was a real scientist all of his life.</p>
+        <p>In 1957 Smbat graduated from Yerevan Polytechnic Institute. Twenty years later I followed in his footsteps by
+            excelling in the entrance exams, and chose the same specialty in Electro-Chemistry at his alma mater. </p>
+        <p>After immigrating to the U.S.A., he never got his dream job. It was a 9-year-venture that he eventually gave
+            up without a single complaint.</p>
+        <p>He will be 89-years-old within weeks, and I want to dedicate this post to the work he has accomplished in his
+            lifetime. Most of his achievements had been credited to his employers in order to be granted permission to
+            publish. </p>
+        <p>My dad was compensated ~$90 for the 2 technical inventions that he worked on, when the USSR sold them to
+            American companies’ for hundreds of millions of dollars in the 1960’s. The engine was used at that time to
+            create artificial diamonds by using a crystallization process.</p>
+        <p>I spent lots of time to scan and prep all of these materials so that you can <a
+                href="https://youtu.be/fZf0dD4ZsbI?si=koSgXEP5ThpDljJX">view it on YouTube</a></p>
+        <h4>Smbat Byurat Publications</h4>
+        <ol>
+            <li>Use of several polymers in the anticorrosion technology. NAUCHNO-TEKHNICHESKI SBORNIK, (Chemistry and
+                Chemical Technology Series), No.2, 1962, Yerevan (Page 33).</li>
+            <li>Protection from corrosion by rubber coatings. MASHINOSTROITEL No.3, 1964 Moscow (Page 32)</li>
+            <li>Influence of polymerization inhibitors on resistance of acid resistant mastics (pastes) in chloroprene
+                containing environments. PROMISHLENNOST ARMENII No.8, 1965, Yerevan (page 39)</li>
+            <li>Gluing fluorine plastics. PLASTICHESKIE MASSY No.7, 1967, Moscow (Page 20)</li>
+            <li>Gluing polytetrafluoroethylene. PLASTICHESKIE MASSY No.8, 1968, Moscow (Page 74)</li>
+            <li>Protection of equipment (apparatus) with pressure-vulcanized rubber on the bases of Nairit KHIMICHESKOIE
+                E NEFTIANOE MASHINOSTROENIE No.4, 1968, Moscow (Page 24)</li>
+            <li>Research of affect of the composition of Nairit rubber coating on their chemical resistance BORBA S
+                KOROZIEI KEM NEFTEPERERAB PROM SBORNIK No.2, 1968, Moscow (page 165)</li>
+            <li>Research of affect of the vulcanization conditions on the chemical resistance of rubbers based on Nairit
+                BORBA S KOROZIEI KEM NEFTEPERERAB PROM SBORNIK No.2, 1968, Moscow (page 175)</li>
+            <li>Removal of old rubber coating from the internal surface of steel equipment (apparatus) OBORUDOVANIE;
+                EXPLUATATSIA, REMONT I ZASHCHITA OT KOROZIEI v KEM PROM No.10, 1973, Moscow (page 15)</li>
+            <li>Super slow speed motors, slow but precise TEKHNIKA MOLODEZHI No.8, 1974, Moscow (page 22)</li>
+            <li>Impact of the components and methods of vulcanization on the chemical resistance of Nairit rubber.
+                Equipment, its use, repair and protection against corrosion in chemical industry. OBORUDOVANIE;
+                EXPLUATATSIA, REMONT I ZASHCHITA OT KOROZIEI v KEM PROM No.12, 1973, Moscow (page 13)</li>
+            <li>Chemical resistance of resin per Nairit PROMISHLENNOST ARMENII No.7, 1968, Yerevan (page 29)</li>
+            <li>Electric motor of constant current made on bases of electrolytic element when movement of current is
+                happening with movement of matter from anode to cathode. IZOBRETATEL I RATHSINALIZATOR No.10, 1977,
+                Moscow (page 25)</li>
+            <li>About chemical resistance of rubber on the bases of Nairit PROMISHLENNOST ARMENII No.8, 1967, Yerevan
+                (page 46)</li>
+            <li>Influence of prescribed factors and methods of vulcanization on the acidity of Nairit rubbers
+                PROMISHLENNOST ARMENII No.12, 1974, Yerevan (page 48)</li>
+            <li>Electrical motors: Motors without any moveable parts inside By Armenian Inventors S. Byurat and P.
+                Nadjarian. SOVETSKI SOUZ, No.1, 1978, Moscow, 1978 (Page 43)</li>
+        </ol>
+
+        <h5>Chemical Abstracts:</h5>
+        v68, 40636x, 1968 v69, 97405w, 1968 v69, 36883d, 1968<br>
+        v70, 12720t, 1969 v70, 12410s, 1969 v85, 44791z, 1970<br>
+        85., 144399q, 1976
+        <h5>Smbat Byurat Inventions</h5>
+        1. Electric DC Motor, Soviet Invention No. 237964 int.C1. H O2K.<br>
+        2. Electric DC Motor, Soviet Invention No. 312355 int.C1. H O2N 4/00.
+        <br>
+        <br>
+        <br>
+        <div class="image-container"><img src='images/image12.png'></div>
+        <div class="image-container"><img src='images/image2.png'></div>
+        <div class="image-container"><img src='images/image19.png'></div>
+        <div class="image-container"><img src='images/image23.png'></div>
+        <div class="image-container"><img src='images/image7.png'></div>
+
+
+
+
+
+
+
+
+    </div>
 </body>
 
 </html>
